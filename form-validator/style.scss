@@ -69,6 +69,8 @@ body {
 		padding: .6em;
 		margin-top: 2rem;
 		width: 100%;
+		text-transform: uppercase;
+		letter-spacing: .08em;
 
 		&:hover {
 			background: hsl(208, 70%, 53%);

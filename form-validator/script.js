@@ -1,3 +1,4 @@
+// DOM Elements
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -59,12 +60,12 @@ function checkLength(input, min, max) {
 }
 
 // Check if passwords match
-function checkMatch(input1, input2) {
+function checkPasswordMatch(input1, input2) {
     if (input1.value.trim() === input2.value.trim()) {
         showSuccess(input2);
         return true;
     } else {
-        showError(input2, `Passwords don't match`);
+        showError(input2, `Passwords do not match`);
         return false;
     }
 }
@@ -83,12 +84,12 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     checkRequired([username, email, password, password2]);
-    checkEmail(email);
     checkLength(username, 3, 15);
     let isValidPassword = checkLength(password, 6, 24);
+    checkEmail(email);
 
     if (isValidPassword && password2.value !== '') {
-        checkMatch(password, password2);
+        checkPasswordMatch(password, password2);
     }
 
     let formControls = [...document.querySelectorAll('.form-control')];
