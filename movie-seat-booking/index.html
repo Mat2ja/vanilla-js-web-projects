@@ -15,8 +15,8 @@
     <body>
 
         <div class='movie-container'>
-            <label>Pick a movie:</label>
             <select id="movie">
+                <option disabled>Pick a movie</option>
                 <option value="10">Unhinged ($10)</option>
                 <option value="14">Parasite ($14)</option>
                 <option value="12">Borat 2 ($12)</option>
@@ -108,8 +108,9 @@
         </div>
 
         <p class="text">
-            You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+            You have selected <span id="count">0</span> seats for a price of <span class="unit">$<span id="total">0</span></span>
         </p>
+        <button class="btn">Reserve</button>
 
         <script src="script.js"></script>
     </body>
