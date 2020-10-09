@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vid</title>
+        <meta name="author" content="Matija Osrečki">
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/progress.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Custom Video Player</h1>
+        <div class="player">
+            <video src="img/video.mp4" id="video" class="screen" poster=""></video>
+            <div class="controls">
+                <button class="btn" id="play">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="icon">
+                        <path d="M4.79 2.093A.5.5 0 004 2.5v10a.5.5 0 00.79.407l7-5a.5.5 0 000-.814l-7-5z" fill="#2ed573"></path>
+                    </svg>
+                </button>
+                <button class="btn" id="stop">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="icon">
+                        <path d="M12 3H3v9h9V3z" fill="#eb4d4b"></path>
+                    </svg>
+                </button>
+                <button class="btn" id="rewind">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                        <path d="M7 5.5a.5.5 0 00-.748-.434l-3.5 2a.5.5 0 000 .868l3.5 2A.5.5 0 007 9.5V8.076l3.252 1.858A.5.5 0 0011 9.5v-4a.5.5 0 00-.748-.434L7 6.924V5.5z" fill="#ffda79"></path>
+                    </svg>
+                </button>
+                <button class="btn" id="forward">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+                        <path d="M4.748 5.066A.5.5 0 004 5.5v4a.5.5 0 00.748.434L8 8.076V9.5a.5.5 0 00.748.434l3.5-2a.5.5 0 000-.868l-3.5-2A.5.5 0 008 5.5v1.424L4.748 5.066z" fill="#ffda79"></path>
+                    </svg>
+                </button>
+                <input type="range" id="progress" class="progress" min='0' max='100' step='0.1' value='0'>
+                <span class="timestamp" id="timestamp">00:00</span>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
