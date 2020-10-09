@@ -12,3 +12,6 @@
 ## [Movie Seat Booking 🎦](https://movie-seat-booking-chi.vercel.app)
 
 -   Local Storage
+
+## [Custom Video Player 📼](https://custom-video-player.vercel.app)
+
