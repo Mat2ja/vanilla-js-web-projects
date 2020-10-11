@@ -15,3 +15,4 @@
 
 ## [Custom Video Player 📼](https://custom-video-player.vercel.app)
 
+## [Exchange Rate Calculator 💲](https://exchange-rate-calc.vercel.app)
